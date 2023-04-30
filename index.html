@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Compito Lodde</title>
+</head>
+<body onload="aggiornaTabella()">
+   <span>Titolo:</span>
+   <input type="text" name="InputTitolo" id="inputTitolo" placeholder="Titolo del film">
+   <br>
+   <span>Genere:</span>
+   <select name="InputGenere" id="inputGenere">
+    <option value="Commedia">Commedia</option>
+    <option value="Azione">Azione</option>
+    <option value="Western">Western</option>
+    <option value="Poliziesco">Poliziesco</option>
+    <option value="Thriller">Thriller</option>
+   </select>
+    <br>
+    <span>Durata</span>
+    <input type="number" name="InputDurata" id="inputDurata" placeholder="Valore in minuti" min="1">
+    <br>
+    <span>Nazione</span>
+    <select name="InputNazione" id="inputNazione">
+        <option value="ITA">ITA</option>
+        <option value="USA">USA</option>
+        <option value="FRA">FRA</option>
+    </select>
+    <br>
+    <button onclick="aggiungiFilm()" type="button">Inserisci</button>
+    <hr>
+    <span>Filtra dati per: </span>
+    <br>
+    <br>
+    <span>Genere</span>
+    <select name="FiltroGenere" id="filtroGenere">
+        <option value=""></option>
+        <option value="Commedia">Commedia</option>
+        <option value="Azione">Azione</option>
+        <option value="Western">Western</option>
+        <option value="Poliziesco">Poliziesco</option>
+        <option value="Thriller">Thriller</option>
+    </select>
+    <span>Nazione</span>
+    <select name="FiltroNazione" id="filtroNazione">
+        <option value=""></option>
+        <option value="ITA">ITA</option>
+        <option value="USA">USA</option>
+        <option value="FRA">FRA</option>
+    </select>
+    <button onclick="filtraFilm()" type="button">Filtra</button>
+    <hr>
+    <button type="button" onclick="salvaLocalStorage()">Salva</button>
+    <hr>
+    <table>
+        <thead>
+            <th>Titolo</th>
+            <th>Genere</th>
+            <th>Durata (min)</th>
+            <th>Nazione</th>
+        </thead>
+        <tbody id="outputFilms">
+
+        </tbody>
+    </table>
+    <script src="main.js"></script>
+</body>
+</html>

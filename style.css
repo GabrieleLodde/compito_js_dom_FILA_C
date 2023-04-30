@@ -1,0 +1,44 @@
+body{
+    background-color: black;
+}
+
+table{
+    max-width: 500px;
+    border-collapse: collapse;
+}
+
+thead, th{
+    border: 2px solid white;
+    color:lightgreen;
+    font-size: 27px;
+}
+
+td{
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+span{
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+input{
+    font-size: 20px;
+    color:darkblue;
+}
+
+select{
+    color:red;
+    font-size: 20px;
+}
+
+button{
+    border-radius: 5px;
+    border-color: gold;
+    background-color: black;
+    color: yellow;
+    font-size: 25px;
+}
